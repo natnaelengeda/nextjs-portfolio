@@ -25,7 +25,6 @@ This Project is built with these technologies
 
 ## Features
 
-- Dark Mode  
 - Responsive Layout
 - Fullscreen mode
 - Cross platform
