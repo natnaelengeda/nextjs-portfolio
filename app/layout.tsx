@@ -3,8 +3,7 @@ import './globals.css'
 import './styles/loading-style.css'
 import './styles/underline-style.css'
 import Header from './layouts/Header'
-import { MantineProvider } from '@mantine/core';
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   icons: {
@@ -98,12 +97,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <MantineProvider>
-          <Header />
-          <main className='w-full min-h-screen gradient_background pt-10 md:pt-28'>
-            {children}
-          </main>
-        </MantineProvider>
+        {/* <NextUIProvider> */}
+        <Header />
+        <main className='w-full min-h-screen gradient_background pt-10 md:pt-28'>
+          {children}
+          <SpeedInsights />
+        </main>
+        {/* </NextUIProvider> */}
       </body>
     </html>
   )

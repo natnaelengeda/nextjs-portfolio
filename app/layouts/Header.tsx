@@ -3,9 +3,10 @@
 import {
   IconMenu2,
 } from "@tabler/icons-react";
-import { Menu } from "@mantine/core";
 import Image from 'next/image'
 import NavLinks from "./components/NavLinks";
+import Link from 'next/link';
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection } from "@nextui-org/react";
 
 
 export default function Header() {
@@ -15,6 +16,7 @@ export default function Header() {
         <div className="transition duration-300  md:px-5 md:py-1  flex flex-row gap-2 items-center justify-center">
           <div className="w-full">
             <Image
+              priority={false}
               className="w-12 md:w-12 h-auto"
               src="/assets/images/logo.png"
               width={500}
@@ -48,51 +50,26 @@ export default function Header() {
         </div>
 
         <div className="lg:hidden block">
-          <Menu
-            shadow="md"
-            width={200}>
-            <Menu.Target>
-              {/* <Button className="bg-violet-500 active:bg-violet-600 p-0 w-12 h-10"> */}
+          <Dropdown>
+            <DropdownTrigger>
               <div className="w-12 h-12 glassy-header rounded-full flex items-center justify-center">
                 <IconMenu2 size={25} />
               </div>
-              {/* </Button> */}
-            </Menu.Target>
-
-            {/* <Menu.Dropdown>
-              <Menu.Item className="active:bg-gray-300" component={Link} to="/">
-                Home
-              </Menu.Item>
-              <Menu.Item
-                className="active:bg-gray-300"
-                component={Link}
-                to="/skills"
-              >
-                Skills
-              </Menu.Item>
-              <Menu.Item
-                className="active:bg-gray-300"
-                component={Link}
-                to="/contact"
-              >
-                Contact
-              </Menu.Item>
-              <Menu.Item
-                className="active:bg-gray-300"
-                component={Link}
-                to="/portfolio"
-              >
-                Portfolio
-              </Menu.Item>
-              <Menu.Item
-                className="active:bg-gray-300"
-                component={Link}
-                to="/resume"
-              >
-                Resume
-              </Menu.Item>
-            </Menu.Dropdown> */}
-          </Menu>
+            </DropdownTrigger>
+            <DropdownMenu aria-label="Link Actions">
+              <DropdownItem key="home" href="/">Home</DropdownItem>
+              <DropdownItem key="skills" href="/skills">Skills</DropdownItem>
+              <DropdownItem key="portfolio" href="/portfolio">Portfolio</DropdownItem>
+              <DropdownItem key="contact" href="/contact"> Contact</DropdownItem>
+              <DropdownSection>
+                <DropdownItem key="resume" href="/resume" >
+                  <div className="w-full flex flex-row items-center justify-center bg-[#017f6c]  py-3 rounded-lg">
+                    <p className="text-white">Resume</p>
+                  </div>
+                </DropdownItem>
+              </DropdownSection>
+            </DropdownMenu>
+          </Dropdown>
         </div>
       </div>
     </header >
