@@ -20,7 +20,7 @@ export default function Resume() {
       }
       <iframe
         className='w-full h-[85vh]'
-        src="https://drive.google.com/file/d/1JPsFngCqRvIbpo71XMM8KYfDKXoxJ-SC/preview"
+        src="https://drive.google.com/file/d/1wAUVzDrHJ6nQ0nZ0z7EzfmOTyhGgcp4H/preview"
         allow="autoplay"
         onLoad={() => setLoading(!Loading)}
       />
