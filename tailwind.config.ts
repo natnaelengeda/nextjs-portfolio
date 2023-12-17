@@ -8,13 +8,46 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      colors: {
+        'primary': {
+          50: '#6a8ec8',
+          100: '#5780c1',
+          200: '#4572ba',
+          300: '#3e66a8',
+          400: '#375b95',
+          500: '#34568b',
+          600: '#305082',
+          700: '#294470',
+          800: '#22395d',
+          900: '#1c2e4a'
+        },
+        'secondary': {
+          50: '#01fed8',
+          100: '#01e4c2',
+          200: '#01cbad',
+          300: '#019882',
+          400: '#019882',
+          500: '#018673',
+          600: '#017f6c',
+          700: '#016556',
+          800: '#004c41',
+          900: '#00332b'
+        },
+        'third': {
+          500: '#017f6c'
+        },
+        'fontColor': '#14213D',
+        'fontColor2': '#6B7385',
+      }
+    },
+    fontFamily: {
+      Alkatra: "cursive",
+      VT323: "monospace",
+      ProductSans: "sans-serif",
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar')({ nocompatible: true }),
+  ],
 }
 export default config
