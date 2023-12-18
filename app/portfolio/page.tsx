@@ -24,7 +24,8 @@ export default function Portfolio() {
                 image={item.image.src}
                 imageDescription={item.imageDescription}
                 url={item.url}
-                description={item.description} />
+                description={item.description}
+                technologies={item.technologies} />
             ))
           }
         </div>
@@ -45,7 +46,8 @@ export default function Portfolio() {
                 image={item.image.src}
                 imageDescription={item.imageDescription}
                 url={item.url}
-                description={item.description} />
+                description={item.description}
+                technologies={item.technologies} />
             ))
           }
         </div>
