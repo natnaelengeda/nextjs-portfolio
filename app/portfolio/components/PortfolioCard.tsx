@@ -103,7 +103,9 @@ export default function PortfolioCard({
       <div className='px-5 py-2 flex flex-row gap-3'>
         {
           technologies.map((items: any) => (
-            <span className="flex flex-row gap-2 items-center justify-start bg-white ">
+            <span
+              key={items}
+              className="flex flex-row gap-2 items-center justify-start bg-white ">
               {showIcons(items)}
             </span>
           ))
