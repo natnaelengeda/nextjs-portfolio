@@ -13,14 +13,17 @@ export const metadata: Metadata = {
   category: 'Technology',
   description: 'Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter  ',
   applicationName: 'Next.js',
-  metadataBase: new URL('https://portfolio.alamondai.com/'),
+  metadataBase: new URL('https://portfolio.alamondai.com'),
   keywords: [
     'Software Development',
     'Fullstack Development',
     'Reactjs',
     'Nodejs',
     'Frontend Developer',
-    'Ethiopia Developer', 'Flutter Developer',
+    'Ethiopia Developer',
+    'Flutter Developer',
+    'Software Developer in Ethiopia',
+    'Reactjs Developer in Ethiopia',
     'Ethiopia',
     'Natnael Engeda',
     'Natty Engeda',
@@ -31,14 +34,14 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Natnael Engeda',
-      url: 'https://portfolio.alamondai.com/'
+      url: 'https://portfolio.alamondai.com'
     }
   ],
   publisher: "Natnael Engeda",
   openGraph: {
     title: 'Natnael Engeda',
     description: "Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter ",
-    url: "https://portfolio.alamondai.com/",
+    url: "https://portfolio.alamondai.com",
     siteName: "Natnael Engeda - Portfolio",
     images: [
       {
@@ -76,7 +79,7 @@ export const metadata: Metadata = {
     yandex: 'yandex',
     yahoo: 'yahoo',
     other: {
-      me: ['nattynengeda@gmail.com', 'https://portfolio.alamondai.com/']
+      me: ['nattynengeda@gmail.com', 'https://portfolio.alamondai.com']
     }
   },
   appleWebApp: {
