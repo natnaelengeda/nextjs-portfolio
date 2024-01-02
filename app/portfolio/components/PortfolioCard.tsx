@@ -16,7 +16,8 @@ import {
   SiFlutter,
   SiDart,
   SiFirebase,
-  SiExpress
+  SiExpress,
+  SiShopify
 } from "react-icons/si";
 
 export default function PortfolioCard({
@@ -56,6 +57,8 @@ export default function PortfolioCard({
       return <SiDart className="text-3xl text-[#03589B]" />
     } else if (icon == "firebase") {
       return <SiFirebase className="text-3xl text-[#FFCC32]" />
+    } else if (icon == 'shopify') {
+      return <SiShopify className="text-3xl text-[#7AB55C]" />
     }
 
   }
@@ -78,7 +81,7 @@ export default function PortfolioCard({
       </div>
 
       {/* Description */}
-      <div className="flex flex-col gap-2 bg-white px-5 py-5">
+      <div className="flex flex-col gap-2 bg-white px-5 py-5 border-t border-gray-200">
         <div className="flex flex-row gap-2 items-center">
           <h1
             style={{

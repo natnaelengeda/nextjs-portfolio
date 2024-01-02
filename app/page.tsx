@@ -52,7 +52,7 @@ export default function Home() {
 
                 {/* Github Icon */}
                 <div
-                  onClick={() => window.open('https://www.github.com/nattyengeda')}
+                  onClick={() => window.open('https://www.github.com/natnaelengeda')}
                   className='rounded-full bg-white w-auto p- cursor-pointer'>
                   <Image
                     className='w-10 h-10'
@@ -65,7 +65,7 @@ export default function Home() {
 
                 {/* Instagram Icon */}
                 <div
-                  onClick={() => window.open('https://www.instagram.com/nattyengeda')}
+                  onClick={() => window.open('https://www.instagram.com/natnaelengeda')}
                   className='rounded-full bg-white w-auto p-1 cursor-pointer'>
                   <Image
                     className='w-8 h-8'

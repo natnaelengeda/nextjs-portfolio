@@ -1,6 +1,6 @@
 import React from 'react'
 import PortfolioCard from './components/PortfolioCard';
-import { mobileAppsProjects, websitesProjects } from '../data/portfolio';
+import { mobileAppsProjects, shopifyStores, websitesProjects } from '../data/portfolio';
 
 export default function Portfolio() {
   return (
@@ -52,6 +52,30 @@ export default function Portfolio() {
           }
         </div>
       </div>
+      {/* Shopify Store */}
+      <div>
+        <div className="w-full py-2 flex items-center justify-start">
+          <h1 className="text-4xl md:text-3xl xl:text-4xl font-bold text-fontColor link-underline link-active">Shopify Stores</h1>
+        </div>
+
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-12 ">
+          {
+            shopifyStores.map((item) => (
+              <PortfolioCard
+                key={item.id}
+                name={item.name}
+                color={item.color}
+                image={item.image.src}
+                imageDescription={item.imageDescription}
+                url={item.url}
+                description={item.description}
+                technologies={item.technologies} />
+            ))
+          }
+        </div>
+      </div>
+
+
     </div>
   )
 }

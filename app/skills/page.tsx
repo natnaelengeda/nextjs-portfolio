@@ -6,6 +6,7 @@ import SkillBox from './components/SkillBox';
 import html_css_js from '../assets/skills/html-css-js.svg';
 import ts from '../assets/skills/ts.png';
 import python from '../assets/skills/python.png';
+import shopify from '../assets/skills/shopify.png';
 // Frameworks
 import reactjs from '../assets/skills/reactjs.svg';
 import nextjs from '../assets/skills/nextjs.svg';
@@ -51,6 +52,7 @@ export default function Skills() {
                   <SkillBox link={'https://www.w3schools.com/html/'} name={'HTML/CSS/JS'} image={html_css_js} />
                   <SkillBox link={'https://www.typescriptlang.org/'} name={'Typescript'} image={ts.src} />
                   <SkillBox link='https://www.python.org/' name={'Python'} image={python.src} />
+                  <SkillBox link='https://www.python.org/' name={'Shopify'} image={shopify.src} />
                 </div>
               </div>
 
