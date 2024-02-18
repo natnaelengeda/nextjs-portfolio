@@ -25,7 +25,7 @@ export default function Header() {
             />
           </div>
           <h1 className="hidden md:block link-underline text-3xl font-bold font-VT323 text-black">
-            Natty.Engeda
+            Natnael.Engeda
           </h1>
         </div>
 
