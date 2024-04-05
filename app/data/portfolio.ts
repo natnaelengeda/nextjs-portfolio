@@ -7,12 +7,12 @@ import lliImage from '../assets/portolio/lli-image.jpg';
 export const websitesProjects = [
     {
         id: 1,
-        name: "Fitsum Printing and Advert ",
+        name: "Fitsum Printing and Advert",
         color: '#8bc43b',
         image: fistumImage,
         imageDescription: "Firstum Printing and Advert Image",
         url: "https://fitsumprintandadvertisng.com/",
-        description: "Semah Mother Child Hospital Website for Online Appointment and Medical Information...",
+        description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
         technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql']
     },
     {
