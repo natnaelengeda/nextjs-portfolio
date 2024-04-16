@@ -11,7 +11,7 @@ V 1.0
 
 ## Authors
 
-- [@nattyengeda](https://www.github.com/nattyengeda)
+- [@natnaelengeda](https://www.github.com/natnaelengeda)
 
 
 ## Build With
