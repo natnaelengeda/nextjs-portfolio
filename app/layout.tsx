@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   category: 'Technology',
   description: 'Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter  ',
   applicationName: 'Next.js',
-  // metadataBase: new URL('https://portfolio.alamondai.com'),
+  metadataBase: new URL('https://portfolio.alamondai.com'),
   keywords: [
     'Software Development',
     'Fullstack Development',
