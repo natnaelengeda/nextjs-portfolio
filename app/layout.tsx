@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Natnael Engeda - Portfolio",
     images: [
       {
-        url: "/seo-image.jpg",
+        url: "https://i.ibb.co/nQQ2rd0/seo-image.jpg",
         width: 1200,
         height: 630,
       }
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
     title: 'Natnael Engeda',
     description: "Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter ",
     site: "@NatnaelEngeda",
-    images: ['/seo-image.jpg'],
+    images: ['https://i.ibb.co/nQQ2rd0/seo-image.jpg'],
     creator: "@NatnaelEngeda",
   },
   verification: {
