@@ -53,7 +53,7 @@ export default function Portfolio() {
         </div>
       </div>
       {/* Shopify Store */}
-      <div>
+      <div className='hidden'>
         <div className="w-full py-2 flex items-center justify-start">
           <h1 className="text-4xl md:text-3xl xl:text-4xl font-bold text-fontColor link-underline link-active">Shopify Stores</h1>
         </div>
