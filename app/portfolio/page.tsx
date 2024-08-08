@@ -1,6 +1,10 @@
 import React from 'react'
 import PortfolioCard from './components/PortfolioCard';
-import { mobileAppsProjects, shopifyStores, websitesProjects } from '../data/portfolio';
+import {
+  mobileAppsProjects,
+  shopifyStores,
+  websitesProjects
+} from '../data/portfolio';
 
 export default function Portfolio() {
   return (
@@ -16,9 +20,9 @@ export default function Portfolio() {
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-12 ">
           {
-            websitesProjects.map((item) => (
+            websitesProjects.map((item: any, index: number) => (
               <PortfolioCard
-                key={item.id}
+                key={index}
                 name={item.name}
                 color={item.color}
                 image={item.image.src}
@@ -38,9 +42,9 @@ export default function Portfolio() {
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-12 ">
           {
-            mobileAppsProjects.map((item) => (
+            mobileAppsProjects.map((item: any, index: number) => (
               <PortfolioCard
-                key={item.id}
+                key={index}
                 name={item.name}
                 color={item.color}
                 image={item.image.src}
@@ -60,9 +64,9 @@ export default function Portfolio() {
 
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 py-5 md:py-12 ">
           {
-            shopifyStores.map((item) => (
+            shopifyStores.map((item: any, index: number) => (
               <PortfolioCard
-                key={item.id}
+                key={index}
                 name={item.name}
                 color={item.color}
                 image={item.image.src}

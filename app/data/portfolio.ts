@@ -3,20 +3,32 @@ import fistumImage from '../assets/portolio/fitsum-image.jpg';
 import tomocaImage from '../assets/portolio/tomoca-image.png';
 import angelImage from '../assets/portolio/angel-skin.png';
 import lliImage from '../assets/portolio/lli-image.jpg';
+import coffeeTerminalImage from '../assets/portolio/coffee-terminal-image.jpg';
+import bermelFestImage from "@/app/assets/portolio/bermel-fest-image.jpg";
 
 export const websitesProjects = [
     {
         id: 1,
-        name: "Fitsum Printing and Advert",
-        color: '#8bc43b',
-        image: fistumImage,
-        imageDescription: "Firstum Printing and Advert Image",
-        url: "https://fitsumprintandadvertisng.com/",
-        description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
-        technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql']
+        name: "Coffee Terminal",
+        color: '#1B1107',
+        image: coffeeTerminalImage,
+        imageDescription: "Coffee Terminal Image",
+        url: "https://www.coffeeterminalet.com/",
+        description: "Coffee Termninal - The Best Coffee Shop in Town...",
+        technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql', 'firebase']
     },
     {
         id: 2,
+        name: "Bermel Fest",
+        color: '#EA2829',
+        image: bermelFestImage,
+        imageDescription: "Bermel Fest Image",
+        url: "https://et.bermelfest.com/",
+        description: "Bermel Fest - Come and enjoy the best event in Ethiopia!...",
+        technologies: ['nextjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql', 'firebase']
+    },
+    {
+        id: 3,
         name: "Semah MCH",
         color: '#1f65b1',
         image: semahImage,
@@ -26,7 +38,7 @@ export const websitesProjects = [
         technologies: ['reactjs', 'ts', 'nodejs', 'expressjs', 'tailwindcss', 'mysql']
     },
     {
-        id: 3,
+        id: 4,
         name: "Angel SKin",
         color: '#d5ac89',
         image: angelImage,
@@ -34,6 +46,16 @@ export const websitesProjects = [
         url: "https://angelskinbyangela.com/",
         description: "Angel Skin is U.S. Based Website for Online Appointment for Skin Care and Waxing Solutions...",
         technologies: ['vue.js', 'tailwindcss'],
+    },
+    {
+        id: 5,
+        name: "Fitsum Printing and Advert",
+        color: '#8bc43b',
+        image: fistumImage,
+        imageDescription: "Firstum Printing and Advert Image",
+        url: "https://fitsumprintandadvertisng.com/",
+        description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
+        technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql']
     },
 ]
 

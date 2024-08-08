@@ -17,8 +17,11 @@ import {
   SiDart,
   SiFirebase,
   SiExpress,
-  SiShopify
+  SiShopify,
 } from "react-icons/si";
+
+// import { RiNextjsFill } from "react-icons/ri";
+import { TbBrandNextjs } from "react-icons/tb";
 
 export default function PortfolioCard({
   name,
@@ -59,6 +62,8 @@ export default function PortfolioCard({
       return <SiFirebase className="text-3xl text-[#FFCC32]" />
     } else if (icon == 'shopify') {
       return <SiShopify className="text-3xl text-[#7AB55C]" />
+    } else if (icon == 'nextjs') {
+      return <TbBrandNextjs className="text-3xl text-[#000000]" />
     }
 
   }
