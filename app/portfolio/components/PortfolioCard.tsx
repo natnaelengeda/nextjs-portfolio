@@ -73,7 +73,7 @@ export default function PortfolioCard({
       onClick={() => {
         window.open(url)
       }}
-      className="normshad flex flex-col rounded-xl overflow-hidden shadow-md item-transition cursor-pointer bg-white">
+      className="w-full h-[21rem] md:h-[25.5rem] normshad flex flex-col rounded-xl overflow-hidden shadow-md item-transition cursor-pointer bg-white">
       {/* Image */}
       <div className="w-full h-full overflow-hidden">
         <Image
@@ -86,13 +86,13 @@ export default function PortfolioCard({
       </div>
 
       {/* Description */}
-      <div className="flex flex-col gap-2 bg-white px-5 py-5 border-t border-gray-200">
+      <div className="flex flex-col gap-1 md:gap-2 bg-white px-5 py-5 border-t border-gray-200">
         <div className="flex flex-row gap-2 items-center">
           <h1
             style={{
               color: color,
             }}
-            className={`text-2xl font-bold ]`}>{name}</h1>
+            className={`text-2xl font-bold`}>{name}</h1>
           <CiLink
             onClick={() => {
               window.open(url)
@@ -108,7 +108,7 @@ export default function PortfolioCard({
       </div>
 
       {/* Technologies Used */}
-      <div className='px-5 py-2 flex flex-row gap-3'>
+      <div className='px-5 py-1 md:py-2 flex flex-row gap-3'>
         {
           technologies.map((items: any) => (
             <span
