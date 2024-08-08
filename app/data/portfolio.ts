@@ -43,7 +43,7 @@ export const websitesProjects = [
         color: '#d5ac89',
         image: angelImage,
         imageDescription: "Angel Skin Image",
-        url: "https://angelskinbyangela.com/",
+        url: "https://angelskin.vercel.app/",
         description: "Angel Skin is U.S. Based Website for Online Appointment for Skin Care and Waxing Solutions...",
         technologies: ['vue.js', 'tailwindcss'],
     },
