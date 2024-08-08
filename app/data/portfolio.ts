@@ -53,7 +53,7 @@ export const websitesProjects = [
         color: '#8bc43b',
         image: fistumImage,
         imageDescription: "Firstum Printing and Advert Image",
-        url: "https://fitsumprintandadvertisng.com/",
+        url: "https://fitsumpptest.vercel.app/",
         description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
         technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql']
     },
