@@ -11,7 +11,7 @@ import { initializeAnalytics } from './lib/firebase';
 export default function Home() {
 
   useEffect(() => {
-    initializeAnalytics;
+    initializeAnalytics();
   }, []);
 
   return (
