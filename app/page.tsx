@@ -6,14 +6,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 // Firebase
-import { analytics, firebase } from './lib/firebase';
+import { initializeAnalytics } from './lib/firebase';
 
 export default function Home() {
 
   useEffect(() => {
-    console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
-    firebase;
-    analytics;
+    initializeAnalytics;
   }, []);
 
   return (

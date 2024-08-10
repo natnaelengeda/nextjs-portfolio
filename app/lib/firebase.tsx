@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+import { getAnalytics, isSupported } from 'firebase/analytics';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -11,10 +11,24 @@ const firebaseConfig = {
   measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
 };
 
-// Initialization
-const firebase = initializeApp(firebaseConfig);
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
-// Analytics
-const analytics = getAnalytics(firebase);
-
-export { firebase, analytics };
+// Initialize Analytics only if it's supported
+export const initializeAnalytics = async () => {
+  if (typeof window !== 'undefined') {
+    try {
+      const isAnalyticsSupported = await isSupported();
+      if (isAnalyticsSupported) {
+        const analytics = getAnalytics(app);
+        return analytics;
+      } else {
+        console.warn('Firebase Analytics is not supported in this environment.');
+      }
+    } catch (error) {
+      console.error('Failed to initialize Firebase Analytics:', error);
+    }
+  } else {
+    console.warn('Firebase Analytics cannot be initialized on the server.');
+  }
+};
