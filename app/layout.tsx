@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   },
   title: 'Natnael Engeda',
   category: 'Technology',
-  description: 'Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter  ',
+  description: 'Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter',
   applicationName: 'Next.js',
-  metadataBase: new URL('https://portfolio.alamondai.com'),
+  metadataBase: new URL('https://www.natnaelengeda.tech/'),
   keywords: [
     'Software Development',
     'Fullstack Development',
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Natnael Engeda',
-      url: 'https://portfolio.alamondai.com'
+      url: 'https://www.natnaelengeda.tech/'
     }
   ],
   publisher: "Natnael Engeda",
   openGraph: {
     title: 'Natnael Engeda',
     description: "Natnael Engeda - Software Developer | Fullstack Developer | Mobile App Developer | Reactjs | Nodejs | Flutter ",
-    url: "https://portfolio.alamondai.com",
+    url: "https://www.natnaelengeda.tech/",
     siteName: "Natnael Engeda - Portfolio",
     images: [
       {
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     yandex: 'yandex',
     yahoo: 'yahoo',
     other: {
-      me: ['nattynengeda@gmail.com', 'https://portfolio.alamondai.com']
+      me: ['nattynengeda@gmail.com', 'https://www.natnaelengeda.tech/']
     }
   },
   appleWebApp: {
@@ -89,7 +89,6 @@ export const metadata: Metadata = {
       '/logo.png'
     ]
   }
-
 };
 
 export default function RootLayout({

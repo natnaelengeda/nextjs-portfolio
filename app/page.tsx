@@ -1,8 +1,21 @@
 "use client"
+
+import { useEffect } from 'react';
+
 import Image from 'next/image'
 import Link from 'next/link'
 
+// Firebase
+import { analytics, firebase } from './lib/firebase';
+
 export default function Home() {
+
+  useEffect(() => {
+    console.log(process.env.NEXT_PUBLIC_FIREBASE_API_KEY);
+    firebase;
+    analytics;
+  }, []);
+
   return (
     <div className='w-full  relative flex flex-col'>
       <div className='w-full mx-auto container grid grid-cols-1 md:grid-cols-2 md:px-10 xl:px-20 py-10 md:gap-32'>
