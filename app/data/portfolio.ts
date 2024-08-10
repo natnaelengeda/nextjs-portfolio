@@ -5,6 +5,7 @@ import angelImage from '../assets/portolio/angel-skin.png';
 import lliImage from '../assets/portolio/lli-image.jpg';
 import coffeeTerminalImage from '../assets/portolio/coffee-terminal-image.jpg';
 import bermelFestImage from "@/app/assets/portolio/bermel-fest-image.jpg";
+import ethioSalacyCalculatorImage from "@/app/assets/portolio/ethio-salary-calculator.jpg";
 
 export const websitesProjects = [
     {
@@ -80,7 +81,20 @@ export const shopifyStores = [
         image: lliImage,
         imageDescription: "Little Luxury Items Images",
         url: "https://littleluxuryitems.co/",
-        description: "Little Luxury Items, your destination for unique and innovative products. As an e-commerce store, we are dedicated to providing you with the best selection of high-quality items that add a touch of luxury to your everyday life",
+        description: "Little Luxury Items, your destination for unique and innovative products. As an e-commerce store...",
         technologies: ['shopify']
+    }
+]
+
+export const personalProjects = [
+    {
+        id: 1,
+        name: "Ethiopia Salary Calculator",
+        color: "#074539",
+        image: ethioSalacyCalculatorImage,
+        imageDescription: "Ethiopia Salary Calculator Image",
+        url: "https://ethiopia-salary-calculator.alamondai.com/",
+        description: "An App to Calculate Salary Based on Ethiopian Tax Law...",
+        technologies: ['reactjs', 'tailwindcss', 'firebase']
     }
 ]
