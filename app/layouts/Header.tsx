@@ -24,12 +24,12 @@ export default function Header() {
               alt="Logo"
             />
           </div>
-          <h1 className="hidden md:block link-underline text-3xl font-bold font-VT323 text-black">
+          <h1 className="hidden md:block link-underline text-3xl font-bold font-VT323 text-white">
             Natnael.Engeda
           </h1>
         </div>
 
-        <div className="hidden lg:block px-10 py-3 ">
+        <div className="hidden lg:block px-10 py-3 text-white">
           <ul className="flex flex-row items-center gap-10 font-semibold">
             <NavLinks href="/" exact className="normal-header link-underline hover:line-height-normal">
               Home
@@ -43,7 +43,7 @@ export default function Header() {
             <NavLinks href="/contact" exact className="normal-header link-underline hover:line-height-normal">
               Contact
             </NavLinks>
-            <NavLinks href="/resume" exact className="transition px-5 py-4 bg-[#017f6c] rounded-lg text-white hover:bg-transparent border hover:border-[#017f6c] hover:text-[#017f6c] outline-none">
+            <NavLinks href="/resume" exact className="transition px-6 py-3 bg-gradient-to-r from-[#F7971E] to-[#FFD200] rounded-lg hover:bg-transparent hover:text-white outline-none text-black">
               Resume
             </NavLinks>
           </ul>

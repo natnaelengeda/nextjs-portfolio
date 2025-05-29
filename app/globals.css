@@ -21,15 +21,15 @@
   }
 
   .glassy-header {
-    @apply bg-white bg-opacity-20 backdrop-blur-sm;
+    @apply bg-black bg-opacity-20 backdrop-blur-sm;
   }
 
   .active-header {
-    @apply text-black font-bold text-xl;
+    @apply text-white font-bold text-xl text_background;
   }
 
   .normal-header {
-    @apply text-black text-xl font-normal;
+    @apply text-white text-xl font-normal;
   }
 
   .icons-style {
