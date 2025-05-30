@@ -44,7 +44,6 @@ export default function Home() {
     },
   ]
 
-
   useEffect(() => {
     initializeAnalytics();
   }, []);
@@ -109,11 +108,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex items-center justify-center font-ProductSans py-2'>
+      <div className='flex items-center justify-center font-ProductSans py-2 text-gray-400'>
         <p>
-          <span
-            className='text-fontColor2'>
-            Made by </span>&#128512; <span className='font-bold text-white'>Natnael Engeda</span>
+          Made by 😊 <span className="text-purple-400 font-medium">Natnael Engeda</span>
         </p>
       </div>
     </div>

@@ -1,101 +1,85 @@
 import React from 'react';
-import SkillBox from './components/SkillBox';
 
-// Images
-// Basics
-import html_css_js from '../assets/skills/html-css-js.svg';
-import ts from '../assets/skills/ts.png';
-import python from '../assets/skills/python.png';
-import shopify from '../assets/skills/shopify.png';
-// Frameworks
-import reactjs from '../assets/skills/reactjs.svg';
-import nextjs from '../assets/skills/nextjs.svg';
-import vuejs from '../assets/skills/vuejs.png';
-import flutterimg from '../assets/skills/flutter.png';
-// Backend
-import phpimg from '../assets/skills/php.webp';
-import nodejs from '../assets/skills/nodejs.png';
-import expressjs from '../assets/skills/express.png';
-import laravel from '../assets/skills/laravel.png';
-// Database 
-import mysql from '../assets/skills/mysql.svg';
-import mongodb from '../assets/skills/mongodb.svg';
-import sqlite from '../assets/skills/sqlite.png';
-
+import Link from "next/link"
+import { CiUser as User } from 'react-icons/ci';
+import { FaArrowLeft as ArrowLeft } from 'react-icons/fa';
 
 
 export default function Skills() {
+  const skills = [
+    { name: "React", level: 90, color: "from-blue-500 to-cyan-500" },
+    { name: "TypeScript", level: 85, color: "from-blue-600 to-blue-400" },
+    { name: "Next.js", level: 88, color: "from-gray-800 to-gray-600" },
+    { name: "Node.js", level: 82, color: "from-green-600 to-green-400" },
+    { name: "Python", level: 75, color: "from-yellow-500 to-yellow-300" },
+    { name: "PostgreSQL", level: 80, color: "from-blue-700 to-blue-500" },
+    { name: "MongoDB", level: 78, color: "from-green-700 to-green-500" },
+    { name: "AWS", level: 70, color: "from-orange-600 to-orange-400" },
+    { name: "Docker", level: 72, color: "from-blue-600 to-blue-400" },
+    { name: "Git", level: 85, color: "from-red-600 to-red-400" },
+    { name: "GraphQL", level: 68, color: "from-pink-600 to-pink-400" },
+    { name: "Tailwind CSS", level: 90, color: "from-teal-500 to-cyan-500" },
+  ]
+
   return (
-    <div className='w-full min-h-screen md:px-20'>
-      <div className='w-full mx-auto flex flex-col gap-5 md:gap-8 p-2 px-5 md:px-0 py-10 container font-ProductSans'>
-        <div>
-          <h1 className='text-5xl md:text-6xl font-bold '>Overview.</h1>
-        </div>
-        <div className='w-full md:w-[80%]'>
-          <p>
-            {` I'm a skilled Frontend Web Developer with experience in JavaScript and expertise in frameworks/library like Next.js, React.js, Tailwind, Bootstap and MUI. I'm a quick learner
-            and collaborate closely with clients to create efficientm scalable, and user-friendly solutions that solve real-world problems. Let's work together to bring your ideas to
-            life!`}
-          </p>
-        </div>
-        <div className='flex flex-col gap-5'>
-          <div>
-            <h1 className='text-5xl md:text-5xl font-semibold'>Skills.</h1>
+    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+      {/* Main Content */}
+      <main className="px-6 py-12 lg:px-12">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="mb-12">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-4 text_background">
+              Skills & Technologies
+            </h1>
+            <p className="text-xl text-gray-400 max-w-2xl">
+              Here are the technologies and tools I work with to bring ideas to life.
+            </p>
           </div>
-          <div>
-            <div className='flex flex-col gap-10'>
 
-              {/* Basic */}
-              <div>
-                <h1 className='text-3xl md:text-4xl font-llight'>Basics</h1>
-                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
-                  <SkillBox link={'https://www.w3schools.com/html/'} name={'HTML/CSS/JS'} image={html_css_js} />
-                  <SkillBox link={'https://www.typescriptlang.org/'} name={'Typescript'} image={ts.src} />
-                  <SkillBox link='https://www.python.org/' name={'Python'} image={python.src} />
-                  <SkillBox link='https://www.python.org/' name={'Shopify'} image={shopify.src} />
+          {/* Skills Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl p-6 hover:bg-gray-800/70 transition-all duration-300 hover:scale-105">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-lg font-semibold text-white">{skill.name}</h3>
+                  <span className="text-sm text-gray-400">{skill.level}%</span>
+                </div>
+
+                {/* Progress Bar */}
+                <div className="w-full bg-gray-700 rounded-full h-2 mb-2">
+                  <div
+                    className={`h-2 rounded-full bg-gradient-to-r ${skill.color} transition-all duration-1000 ease-out`}
+                    style={{ width: `${skill.level}%` }}
+                  ></div>
+                </div>
+
+                {/* Skill Level Text */}
+                <div className="text-xs text-gray-500">
+                  {skill.level >= 85 ? "Expert" : skill.level >= 70 ? "Advanced" : "Intermediate"}
                 </div>
               </div>
+            ))}
+          </div>
 
-              {/* Frameworks */}
-              <div>
-                <h1 className='text-3xl md:text-4xl font-llight '>Frameworks</h1>
-                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
-                  <SkillBox link='https://react.dev/' name={'React.js'} image={reactjs} />
-                  <SkillBox link='https://nextjs.org/' name={'Next.js'} image={nextjs} />
-                  <SkillBox link='https://vuejs.org/' name={'Vue.js'} image={vuejs.src} />
-                  <SkillBox link='https://flutter.dev/' name={'Flutter'} image={flutterimg.src} />
-                </div>
-                <div className='h-10'>
-                </div>
-              </div>
-
-              {/* Backend */}
-              <div>
-                <h1 className='text-3xl md:text-4xl font-llight '>Backend</h1>
-                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
-                  <SkillBox link='https://www.php.net/' name={'PHP'} image={phpimg.src} />
-                  <SkillBox link='https://nodejs.org/en' name={'Node.js'} image={nodejs.src} />
-                  <SkillBox link='https://expressjs.com/' name={'Express.js'} image={expressjs.src} />
-                  <SkillBox link='https://laravel.com/' name={'Laravel'} image={laravel.src} />
-                </div>
-              </div>
-
-
-              {/* Database */}
-              <div>
-                <h1 className='text-3xl md:text-4xl font-llight '>Database</h1>
-                <div className='flex flex-col md:flex-row md:flex-wrap gap-10 p-2 py-5'>
-                  <SkillBox link='https://www.mysql.com/' name={'MySQL'} image={mysql} />
-                  <SkillBox link='https://www.mongodb.com/' name={'MongoDB'} image={mongodb} />
-                  <SkillBox link='https://www.sqlite.org/index.html' name={'SQLite'} image={sqlite.src} />
-                </div>
-              </div>
-            </div>
-
+          {/* Additional Info */}
+          <div className="mt-16 text-center">
+            <h2 className="text-2xl font-bold text-white mb-4">Always Learning</h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">
+              Technology evolves rapidly, and I'm committed to continuous learning. Currently exploring AI/ML, Web3
+              technologies, and advanced cloud architectures.
+            </p>
           </div>
         </div>
+      </main>
 
-      </div>
-    </div >
+      {/* Footer */}
+      <footer className="text-center py-8 text-gray-400">
+        <p>
+          Made by 😊 <span className="text-purple-400 font-medium">Natnael Engeda</span>
+        </p>
+      </footer>
+    </div>
   )
 }
