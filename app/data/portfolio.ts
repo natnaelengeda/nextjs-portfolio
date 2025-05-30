@@ -28,10 +28,11 @@ export const projects = [
         description: "Bermel Fest - Come and enjoy the best event in Ethiopia!...",
         technologies: ['nextjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql', 'firebase'],
         features: [
-            "Multilingual support (Amharic + English)",
             "Event registration and ticket system",
             "Admin panel for content updates",
-            "Firebase Authentication and CMS integration"
+            "Firebase Authentication and CMS integration",
+            "Merchandise Sale",
+            "Vendor Registration"
         ]
     },
     {
@@ -50,10 +51,10 @@ export const projects = [
         description: "Coffee Termninal - The Best Coffee Shop in Town...",
         technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql', 'firebase'],
         features: [
-            "Interactive product showcase",
             "Custom admin dashboard",
             "Realtime inventory updates",
-            "Mobile responsive design"
+            "Mobile responsive design",
+            "Menu Showcase"
         ]
     },
     {
@@ -61,7 +62,7 @@ export const projects = [
         color: '#8bc43b',
         image: fistumImage,
         imageDescription: "Firstum Printing and Advert Image",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "Fitsum Advert is a printing and advertising Company which Handles different Printing Services. This website is designed to streamline the ordering process and showcase a diverse portfolio of work.",
         description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
         live: "https://fitsumpptest.vercel.app/",
         github: {
@@ -72,10 +73,9 @@ export const projects = [
         date: "2024-08",
         technologies: ['reactjs', 'nodejs', 'expressjs', 'tailwindcss', 'mysql'],
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
-            "Mobile responsive design"
+            "Galery Showcase",
+            "Online Ordering",
+            "Feedback Mechanism"
         ]
     },
     {
@@ -90,14 +90,12 @@ export const projects = [
         },
         team: "Solo",
         date: "2024-08",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "Angel Skin is a beautifully designed skincare website focused on offering a seamless user experience with an elegant, modern design.",
         description: "Angel Skin is U.S. Based Website for Online Appointment for Skin Care and Waxing Solutions...",
         technologies: ['vue.js', 'tailwindcss'],
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
-            "Mobile responsive design"
+            "Showcase Services",
+            "Feedback Mechanism"
         ]
     },
     {
@@ -113,13 +111,12 @@ export const projects = [
         team: "Solo",
         date: "2024-08",
         category: "Web Development",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "A property listing website with advanced search, filtering, and Renting Options.",
         description: "A property listing website with advanced search, filtering, and Renting Options.",
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
-            "Mobile responsive design"
+            "Filter Houses",
+            "Rent or Buy Houses",
+            "Feedback Mechanism",
         ]
     },
     {
@@ -133,13 +130,13 @@ export const projects = [
             url: ""
         },
         technologies: ['reactjs', 'ts', 'nodejs', 'expressjs', 'tailwindcss', 'mysql'],
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
         description: "Semah Mother Child Hospital Website for Online Appointment and Medical Information...",
+        fullDescription: "The SEMAH MCH Center website serves as an online presence for a healthcare facility specializing in maternal and child health services.",
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
-            "Mobile responsive design"
+            "Online Appointment",
+            "Check Available Doctors",
+            "Get Services Online",
+            "Custom Admin Dashboard"
         ]
     },
     {
@@ -152,14 +149,14 @@ export const projects = [
             type: "private",
             url: ""
         },
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "Total Focus Soccer is a modern web platform designed to streamline soccer training schedules and team coordination with an intuitive, mobile-friendly experience.",
         description: "Total Focus Soccer is a modern web platform designed to streamline soccer training schedules and team coordination with an intuitive, mobile-friendly experience.",
         category: "Web Development",
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
-            "Mobile responsive design"
+            "Online Appoitment",
+            "Feedback Mechanism",
+            "Mobile responsive design",
+            "Previous Training Gallery"
         ]
     },
     {
@@ -173,11 +170,11 @@ export const projects = [
             url: ""
         },
         description: "The Lydia Getaneh Foundation website offers an intuitive user interface that allows visitors to easily navigate through information about the foundation's mission, programs, and impact. The site is fully responsive, ensuring optimal viewing experiences across various devices.​",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "The Lydia Getaneh Foundation website offers an intuitive user interface that allows visitors to easily navigate through information about the foundation's mission, programs, and impact. The site is fully responsive, ensuring optimal viewing experiences across various devices.​",
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
+            "Donation Form",
+            "Volutneer Form",
+            "Feedback Mechanism",
             "Mobile responsive design"
         ],
         category: "Web Development",
@@ -193,9 +190,10 @@ export const projects = [
             url: ""
         },
         description: "Tomoca App is an app that allows you to order coffee from the nearest Tomoca Coffee Shop.",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "Tomoca Coffee App features an intuitive user interface that allows users to easily navigate, identify their needs, and make payments with ease thanks to an integrated payment gateway.",
         features: [
-            "Interactive product showcase",
+            "Online Ordering",
+            "Payment Gateway",
             "Custom admin dashboard",
             "Realtime inventory updates",
             "Mobile responsive design"
@@ -213,11 +211,8 @@ export const projects = [
             url: "https://github.com/natnaelengeda/salary-calculator-project-web"
         },
         description: "An App to Calculate Salary Based on Ethiopian Tax Law...",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "An App to Calculate Salary Based on Ethiopian Tax Law...",
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
             "Mobile responsive design"
         ],
         technologies: ['reactjs', 'tailwindcss', 'firebase']
@@ -234,11 +229,8 @@ export const projects = [
             url: "https://github.com/natnaelengeda/ethiopia-earthquake-frontend"
         },
         description: "An App to Get Notificaiton when There is an Earth Quake",
-        fullDescription: "Modern web app for a coffee brand offering online ordering and a digital menu with a clean UI. Designed to reflect the essence of Ethiopian coffee culture.",
+        fullDescription: "An App to Get Notificaiton when There is an Earth Quake",
         features: [
-            "Interactive product showcase",
-            "Custom admin dashboard",
-            "Realtime inventory updates",
             "Mobile responsive design"
         ],
     }
