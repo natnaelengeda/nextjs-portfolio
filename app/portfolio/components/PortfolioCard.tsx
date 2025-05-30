@@ -3,7 +3,6 @@ import React from "react"
 
 // Loadable Image
 import { AsyncImage } from 'loadable-image'
-import { Blur } from 'transitions-kit'
 
 // Components
 import { Badge } from "@/app/components/badge";
@@ -30,8 +29,7 @@ export default function PortfolioCard({ project, setSelectedProject }: IPortfoli
             height: "100%"
           }}
           loader={<LoadingImage />}
-          error={<LoadingImage />}
-          Transition={props => <Blur radius={10} {...props} />} />
+          error={<LoadingImage />} />
       </div>
 
 

@@ -5,26 +5,26 @@ import {
 } from "@tabler/icons-react";
 import Image from 'next/image'
 import NavLinks from "./components/NavLinks";
-import Link from 'next/link';
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection } from "@nextui-org/react";
 
+// Icons
+import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection } from "@nextui-org/react";
 
 export default function Header() {
   return (
     <header className="z-40 w-full h-20 md:h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
       <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0 ">
         <div className="transition duration-300  md:px-5 md:py-1  flex flex-row gap-2 items-center justify-center">
-          <div className="w-full">
+          <div className="w-full hidden">
             <Image
               priority={false}
-              className="w-12 md:w-12 h-auto"
+              className="w-12 md:w-10 h-auto"
               src="/assets/images/logo.png"
               width={500}
               height={500}
               alt="Logo"
             />
           </div>
-          <h1 className="hidden md:block link-underline text-3xl font-bold font-VT323 text-white">
+          <h1 className="link-underline text-3xl font-bold font-VT323 text-white">
             Natnael.Engeda
           </h1>
         </div>
@@ -52,8 +52,11 @@ export default function Header() {
         <div className="lg:hidden block">
           <Dropdown>
             <DropdownTrigger>
-              <div className="w-12 h-12 glassy-header rounded-full flex items-center justify-center">
-                <IconMenu2 size={25} />
+              <div
+                className="w-12 h-12 bg-gradient-to-r from-[#F7971E] to-[#FFD200] rounded-lg flex items-center justify-center">
+                <IconMenu2
+                  size={25}
+                  className="text-white" />
               </div>
             </DropdownTrigger>
             <DropdownMenu aria-label="Link Actions">

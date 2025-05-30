@@ -7,10 +7,9 @@ import { LoadingImage } from './LoadingImage';
 
 // Loadable Image
 import { AsyncImage } from 'loadable-image'
-import { Blur } from 'transitions-kit'
 
 // Icons
-import { Github, User, ArrowLeft, ExternalLink, X, Calendar, Users, Code2, LockKeyhole } from "lucide-react"
+import { Github, ExternalLink, X, Calendar, Users, Code2, LockKeyhole } from "lucide-react"
 
 interface IProjectSidebar {
   selectedProject: any;
@@ -30,7 +29,7 @@ export default function ProjectSidebar({ selectedProject, setSelectedProject }: 
             <div className="p-6">
               {/* Header */}
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold text-white">{selectedProject.title}</h2>
+                <h2 className="text-2xl font-bold text-white">{selectedProject.name}</h2>
                 <Button
                   variant="ghost"
                   size="icon"
@@ -51,8 +50,7 @@ export default function ProjectSidebar({ selectedProject, setSelectedProject }: 
                     borderRadius: "1rem",
                   }}
                   loader={<LoadingImage />}
-                  error={<LoadingImage />}
-                  Transition={props => <Blur radius={10} {...props} />} />
+                  error={<LoadingImage />} />
               </div>
 
               {/* Project Info */}
