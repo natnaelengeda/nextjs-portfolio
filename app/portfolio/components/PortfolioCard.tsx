@@ -1,123 +1,61 @@
 "use client"
-import Image from 'next/image';
+import React from "react"
 
-// Icons
-import { CiLink } from 'react-icons/ci';
-import {
-  FaReact,
-  FaVuejs,
-  FaNodeJs,
-} from "react-icons/fa";
+// Loadable Image
+import { AsyncImage } from 'loadable-image'
+import { Blur } from 'transitions-kit'
 
-import {
-  SiTailwindcss,
-  SiMysql,
-  SiTypescript,
-  SiFlutter,
-  SiDart,
-  SiFirebase,
-  SiExpress,
-  SiShopify,
-} from "react-icons/si";
+// Components
+import { Badge } from "@/app/components/badge";
+import { LoadingImage } from "./LoadingImage";
 
-// import { RiNextjsFill } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
+interface IPortfolioCard {
+  project: any;
+  setSelectedProject: any;
+}
+export default function PortfolioCard({ project, setSelectedProject }: IPortfolioCard) {
 
-export default function PortfolioCard({
-  name,
-  image,
-  imageDescription,
-  url,
-  description,
-  color,
-  technologies }:
-  {
-    name: string,
-    image: string,
-    imageDescription: string,
-    url: string,
-    description: string,
-    color: string,
-    technologies: any
-  }) {
-
-  const showIcons = (icon: string) => {
-    if (icon === "reactjs") {
-      return <FaReact className="text-3xl text-[#149ECA]" />
-    } else if (icon === "vue.js") {
-      return <FaVuejs className="text-3xl text-[#42B883]" />
-    } else if (icon === "nodejs") {
-      return <FaNodeJs className="text-3xl text-green-700" />
-    } else if (icon == "ts") {
-      return <SiTypescript className="text-3xl text-[#3178C6]" />
-    } else if (icon == "tailwindcss") {
-      return <SiTailwindcss className="text-3xl text-[#38BDF8]" />
-    } else if (icon == "expressjs") {
-      return <SiExpress className="text-3xl text-green-700" />
-    } else if (icon == "flutter") {
-      return <SiFlutter className="text-3xl text-[#0468D7]" />
-    } else if (icon == "dart") {
-      return <SiDart className="text-3xl text-[#03589B]" />
-    } else if (icon == "firebase") {
-      return <SiFirebase className="text-3xl text-[#FFCC32]" />
-    } else if (icon == 'shopify') {
-      return <SiShopify className="text-3xl text-[#7AB55C]" />
-    } else if (icon == 'nextjs') {
-      return <TbBrandNextjs className="text-3xl text-[#000000]" />
-    }
-
-  }
 
   return (
     <div
-      onClick={() => {
-        window.open(url)
-      }}
-      className="w-full h-[21rem] md:h-[25.5rem] normshad flex flex-col rounded-xl overflow-hidden shadow-md item-transition cursor-pointer bg-white">
+      className="bg-gray-800/50 backdrop-blur-sm border border-gray-700 rounded-xl overflow-hidden hover:bg-gray-800/70 transition-all duration-300 hover:scale-105 cursor-pointer"
+      onClick={() => setSelectedProject(project)}>
+
       {/* Image */}
-      <div className="w-full h-full overflow-hidden">
-        <Image
-          className="w-full h-full object-cover"
-          src={image}
-          alt={imageDescription}
-          width={500}
-          height={500}
-        />
+      <div className="relative w-full h-60">
+        <AsyncImage
+          src={typeof project.image === "string" ? project.image : project.image.src}
+          style={{
+            width: "100%",
+            height: "100%"
+          }}
+          loader={<LoadingImage />}
+          error={<LoadingImage />}
+          Transition={props => <Blur radius={10} {...props} />} />
       </div>
 
-      {/* Description */}
-      <div className="flex flex-col gap-1 md:gap-2 bg-white px-5 py-5 border-t border-gray-200">
-        <div className="flex flex-row gap-2 items-center">
-          <h1
-            style={{
-              color: color,
-            }}
-            className={`text-2xl font-bold`}>{name}</h1>
-          <CiLink
-            onClick={() => {
-              window.open(url)
-            }}
-            style={{
-              color: color,
-              WebkitTextStroke: `1px ${color}`,
-              WebkitTextFillColor: 'transparent',
-            }}
-            className={`text-3xl font-bold cursor-pointer`} />
+
+      <div className="p-4">
+        <h3 className="text-lg font-semibold text-white mb-2">{project.name}</h3>
+        <p className="text-sm text-gray-400 mb-3 line-clamp-2">{project.description}</p>
+
+        <div className="flex flex-wrap gap-1 mb-3">
+          {project.technologies.slice(0, 3).map((tag: any) => (
+            <Badge key={tag} variant="secondary" className="text-xs bg-gray-700 text-gray-300">
+              {tag}
+            </Badge>
+          ))}
+          {project.technologies.length > 3 && (
+            <Badge variant="secondary" className="text-xs bg-gray-700 text-gray-300">
+              +{project.technologies.length - 3}
+            </Badge>
+          )}
         </div>
-        <p className="text-sm text-fontColor">{description}</p>
-      </div>
-
-      {/* Technologies Used */}
-      <div className='px-5 py-1 md:py-2 flex flex-row gap-3'>
-        {
-          technologies.map((items: any) => (
-            <span
-              key={items}
-              className="flex flex-row gap-2 items-center justify-start bg-white ">
-              {showIcons(items)}
-            </span>
-          ))
-        }
+        {/* 
+                  <div className="flex items-center justify-between text-xs text-gray-500">
+                    <span>{project.date}</span>
+                    <span>{project.team}</span>
+                  </div> */}
       </div>
     </div>
   )

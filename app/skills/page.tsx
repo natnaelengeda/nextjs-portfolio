@@ -67,7 +67,7 @@ export default function Skills() {
           <div className="mt-16 text-center">
             <h2 className="text-2xl font-bold text-white mb-4">Always Learning</h2>
             <p className="text-gray-400 max-w-2xl mx-auto">
-              Technology evolves rapidly, and I'm committed to continuous learning. Currently exploring AI/ML, Web3
+              Technology evolves rapidly, and {`I'm`} committed to continuous learning. Currently exploring AI/ML, Web3
               technologies, and advanced cloud architectures.
             </p>
           </div>
