@@ -164,3 +164,8 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Public Files
+/public/sitemap.xml
+/public/sitemap-0.xml
+/public/robots.txt
