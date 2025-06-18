@@ -3,6 +3,7 @@ import fistumImage from '../assets/portolio/fitsum-image.jpg';
 import tomocaImage from '../assets/portolio/tomoca-image.png';
 import angelImage from '../assets/portolio/angel-skin.png';
 import lliImage from '../assets/portolio/lli-image.jpg';
+import virtualGreivingSquareImage from "../assets/portolio/virtual-greiving-square.jpg";
 import coffeeTerminalImage from '../assets/portolio/coffee-terminal-image.jpg';
 import bermelFestImage from "@/app/assets/portolio/bermel-fest-image.jpg";
 import ethioSalacyCalculatorImage from "@/app/assets/portolio/ethio-salary-calculator.jpg";
@@ -76,6 +77,30 @@ export const projects = [
             "Galery Showcase",
             "Online Ordering",
             "Feedback Mechanism"
+        ]
+    },
+    {
+        name: "Virtual Grieving Square",
+        color: '#1a75ba',
+        image: virtualGreivingSquareImage,
+        imageDescription: "Virtual Grieving Square Image",
+        live: "https://virtualgrievingsquare.com//",
+        github: {
+            type: "private",
+            url: ""
+        },
+        team: "Solo",
+        date: "2025-02",
+        fullDescription: "Virtual Grieving Square is a compassionate digital platform that offers a safe and sympathetic environment for people grieving the loss of loved ones. Users can share personal posts, establish permanent monuments, and accept donations.",
+        description: "Virtual Grieving Square is a compassionate digital platform that offers a safe and sympathetic environment for ...",
+        technologies: ['reactjs', 'tailwindcss', 'nodejs', 'expressjs'],
+        features: [
+            "Social Platform",
+            "Responsive Design",
+            "Auth0 Integration",
+            "Firebase FCM",
+            "Stripe API Integration",
+            "AWS Cloud Integration"
         ]
     },
     {
