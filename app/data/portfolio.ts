@@ -65,7 +65,7 @@ export const projects = [
         imageDescription: "Firstum Printing and Advert Image",
         fullDescription: "Fitsum Advert is a printing and advertising Company which Handles different Printing Services. This website is designed to streamline the ordering process and showcase a diverse portfolio of work.",
         description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
-        live: "https://fitsumpptest.vercel.app/",
+        live: "https://fitsumpp.vercel.app/",
         github: {
             type: "private",
             url: ""
