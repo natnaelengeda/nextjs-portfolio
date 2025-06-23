@@ -18,7 +18,7 @@ export const projects = [
         color: "#EA2829",
         image: bermelFestImage,
         imageDescription: "Bermel Fest Image",
-        live: "https://et.bermelfest.com/",
+        live: "https://bermelfest.vercel.app/",
         github: {
             type: "private",
             url: ""
