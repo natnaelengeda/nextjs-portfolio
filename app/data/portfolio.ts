@@ -169,7 +169,7 @@ export const projects = [
         color: '#1f65b1',
         image: totalFocusImage,
         technologies: ["reactjs", "tailwindcss", "Google Calander API"],
-        live: "http://totalfocussoccer.com/",
+        live: "https://totalfoccus.vercel.app/",
         github: {
             type: "private",
             url: ""
