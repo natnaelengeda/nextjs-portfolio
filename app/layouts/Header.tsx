@@ -12,7 +12,7 @@ import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, DropdownSection 
 export default function Header() {
   return (
     <header className="z-40 w-full h-20 md:h-24 flex flex-row gap-20 items-center justify-center fixed md:px-20 glassy-header">
-      <div className="container flex flex-row gap-20 items-center justify-between px-5 md:px-0 ">
+      <div className="container flex flex-row md:gap-20 items-center justify-between px-5 md:px-0 ">
         <div className="transition duration-300  md:px-5 md:py-1  flex flex-row gap-2 items-center justify-center">
           <div className="w-full hidden">
             <Image
@@ -40,10 +40,11 @@ export default function Header() {
             <NavLinks href="/portfolio" exact className="normal-header link-underline hover:line-height-normal">
               Portfolio
             </NavLinks>
-            <NavLinks href="/contact" exact className="normal-header link-underline hover:line-height-normal">
+            {/* <NavLinks href="/contact" exact className="normal-header link-underline hover:line-height-normal">
               Contact
-            </NavLinks>
-            <NavLinks href="/resume" exact className="transition px-6 py-3 bg-gradient-to-r from-[#F7971E] to-[#FFD200] rounded-lg hover:bg-transparent hover:text-white outline-none text-black">
+            </NavLinks> */}
+            <NavLinks
+              href="/resume" exact className="transition px-6 py-3 bg-gradient-to-r from-[#F7971E] to-[#FFD200] rounded-lg hover:bg-transparent hover:text-white outline-none text-black">
               Resume
             </NavLinks>
           </ul>
@@ -59,14 +60,31 @@ export default function Header() {
                   className="text-white" />
               </div>
             </DropdownTrigger>
-            <DropdownMenu aria-label="Link Actions">
-              <DropdownItem key="home" href="/">Home</DropdownItem>
-              <DropdownItem key="skills" href="/skills">Skills</DropdownItem>
-              <DropdownItem key="portfolio" href="/portfolio">Portfolio</DropdownItem>
-              <DropdownItem key="contact" href="/contact"> Contact</DropdownItem>
+            <DropdownMenu
+              aria-label="Link Actions"
+              className="rounded">
+              <DropdownItem
+                key="home"
+                href="/"
+                className="h-12">
+                Home
+              </DropdownItem>
+              <DropdownItem
+                key="skills"
+                href="/skills"
+                className="h-12">
+                Skills
+              </DropdownItem>
+              <DropdownItem
+                key="portfolio"
+                href="/portfolio"
+                className="h-12">
+                Portfolio
+              </DropdownItem>
+              {/* <DropdownItem key="contact" href="/contact"> Contact</DropdownItem> */}
               <DropdownSection>
                 <DropdownItem key="resume" href="/resume" >
-                  <div className="w-full flex flex-row items-center justify-center bg-[#017f6c]  py-3 rounded-lg">
+                  <div className="w-full flex flex-row items-center justify-center bg-gradient-to-r from-[#F7971E] to-[#FFD200]  py-3 rounded-lg">
                     <p className="text-white">Resume</p>
                   </div>
                 </DropdownItem>

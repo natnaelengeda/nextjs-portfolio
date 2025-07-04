@@ -3,6 +3,7 @@ import fistumImage from '../assets/portolio/fitsum-image.jpg';
 import tomocaImage from '../assets/portolio/tomoca-image.png';
 import angelImage from '../assets/portolio/angel-skin.png';
 import lliImage from '../assets/portolio/lli-image.jpg';
+import virtualGreivingSquareImage from "../assets/portolio/virtual-greiving-square.jpg";
 import coffeeTerminalImage from '../assets/portolio/coffee-terminal-image.jpg';
 import bermelFestImage from "@/app/assets/portolio/bermel-fest-image.jpg";
 import ethioSalacyCalculatorImage from "@/app/assets/portolio/ethio-salary-calculator.jpg";
@@ -17,7 +18,7 @@ export const projects = [
         color: "#EA2829",
         image: bermelFestImage,
         imageDescription: "Bermel Fest Image",
-        live: "https://et.bermelfest.com/",
+        live: "https://bermelfest.vercel.app/",
         github: {
             type: "private",
             url: ""
@@ -64,7 +65,7 @@ export const projects = [
         imageDescription: "Firstum Printing and Advert Image",
         fullDescription: "Fitsum Advert is a printing and advertising Company which Handles different Printing Services. This website is designed to streamline the ordering process and showcase a diverse portfolio of work.",
         description: "Fitsum Printing and Advert website for Advertising Products and Ordering Online...",
-        live: "https://fitsumpptest.vercel.app/",
+        live: "https://fitsumpp.vercel.app/",
         github: {
             type: "private",
             url: ""
@@ -76,6 +77,30 @@ export const projects = [
             "Galery Showcase",
             "Online Ordering",
             "Feedback Mechanism"
+        ]
+    },
+    {
+        name: "Virtual Grieving Square",
+        color: '#1a75ba',
+        image: virtualGreivingSquareImage,
+        imageDescription: "Virtual Grieving Square Image",
+        live: "https://virtualgrievingsquare.com//",
+        github: {
+            type: "private",
+            url: ""
+        },
+        team: "Solo",
+        date: "2025-02",
+        fullDescription: "Virtual Grieving Square is a compassionate digital platform that offers a safe and sympathetic environment for people grieving the loss of loved ones. Users can share personal posts, establish permanent monuments, and accept donations.",
+        description: "Virtual Grieving Square is a compassionate digital platform that offers a safe and sympathetic environment for ...",
+        technologies: ['reactjs', 'tailwindcss', 'nodejs', 'expressjs'],
+        features: [
+            "Social Platform",
+            "Responsive Design",
+            "Auth0 Integration",
+            "Firebase FCM",
+            "Stripe API Integration",
+            "AWS Cloud Integration"
         ]
     },
     {
@@ -144,7 +169,7 @@ export const projects = [
         color: '#1f65b1',
         image: totalFocusImage,
         technologies: ["reactjs", "tailwindcss", "Google Calander API"],
-        live: "http://totalfocussoccer.com/",
+        live: "https://totalfoccus.vercel.app/",
         github: {
             type: "private",
             url: ""

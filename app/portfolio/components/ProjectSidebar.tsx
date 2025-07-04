@@ -108,7 +108,7 @@ export default function ProjectSidebar({ selectedProject, setSelectedProject }: 
                     rel="noopener noreferrer"
                     className='flex flex-row items-center justify-center gap-2'>
                     <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
+                    Live Website
                   </a>
                 </Button>
                 <Button
